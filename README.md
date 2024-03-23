@@ -1,6 +1,6 @@
 # ACE GUN
 
-[![Witches](http://img.youtube.com/vi/vg1U_d00HHg/0.jpg)](https://www.youtube.com/watch?v=vg1U_d00HHg)
+[![ACE GUN](http://img.youtube.com/vi/vg1U_d00HHg/0.jpg)](https://www.youtube.com/watch?v=vg1U_d00HHg)
 
 ## 説明
 トップをねらってください。<br>
