@@ -1,0 +1,31 @@
+crt0.rel            :   crt0.s \
+                        main.inc
+main.rel            :   main.s main.inc \
+                        bios.inc System.inc
+System.rel          :   System.s System.inc \
+                        main.inc bios.inc vdp.inc
+Math.rel            :   Math.s Math.inc
+Sound.rel           :   Sound.s Sound.inc \
+                        bios.inc System.inc
+App.rel             :   App.s App.inc \
+                        bios.inc vdp.inc System.inc Title.inc Game.inc
+Title.rel           :   Title.s Title.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc
+Game.rel            :   Game.s Game.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Player.inc Generator.inc Enemy.inc Back.inc Bomb.inc
+Player.rel          :   Player.s Player.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc
+Generator.rel       :   Generator.s Generator.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc Player.inc Enemy.inc
+Enemy.rel           :   Enemy.s Enemy.inc \
+                        bios.inc vdp.inc System.inc Sound.inc Math.inc App.inc Game.inc Player.inc
+Back.rel            :   Back.s Back.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc
+Bomb.rel            :   Bomb.s Bomb.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc
+
+pattern.rel         :   pattern.s
+buster.rel          :   buster.s
+coach-0.rel         :   coach-0.s
+coach-1.rel         :   coach-1.s
+logo.rel            :   logo.s
